@@ -4,14 +4,14 @@ import { ArrowBigRight } from "lucide-react";
 
 const Features = () => {
   return (
-    <section id="features" className="py-20 bg-white">
+    <section id="features" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Heading */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Powerful Features To Run Your Business
+            Powerful Features To Run Your Business ⚙️
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 ">
             Everything you need to run your business with AI-powered automation.
           </p>
         </div>

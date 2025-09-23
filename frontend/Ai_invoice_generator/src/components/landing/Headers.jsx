@@ -27,7 +27,7 @@ const Headers = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-blue-900/95 backdrop-blur-md shadow-md" : "bg-blue-900"
+        isScrolled ? "bg-blue-900/95 backdrop-blur-md shadow-md" : "bg-blue-950"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -43,10 +43,10 @@ const Headers = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8 text-white font-medium">
-            {["Features", "Testimonials", "FAQ"].map((item) => (
+            {["Features", "Testimonials", "FAQS"].map((item) => (
               <a
                 key={item}
-                href={`/${item.toLowerCase()}`}
+                href={`#${item.toLowerCase()}`}
                 className="relative group"
               >
                 {item}
