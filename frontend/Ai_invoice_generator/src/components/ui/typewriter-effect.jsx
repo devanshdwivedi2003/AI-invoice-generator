@@ -5,7 +5,6 @@ import { motion, stagger, useAnimate, useInView } from "motion/react";
 import { useEffect } from "react";
 
 export const TypewriterEffect = ({ words, className, cursorClassName }) => {
-  // split text inside of words into array of characters
   const wordsArray = words.map((word) => {
     return {
       ...word,
