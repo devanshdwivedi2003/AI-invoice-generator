@@ -138,7 +138,6 @@ const updateInvoice = async (req, res) => {
   }
 };
 
-// DELETE INVOICE
 const deleteInvoice = async (req, res) => {
   try {
     const invoice = await Invoice.findByIdAndDelete(req.params.id);

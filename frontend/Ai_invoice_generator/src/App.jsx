@@ -16,17 +16,19 @@ import CreateInvoice from "./pages/Invoices/CreateInvoice";
 import InvoiceDetails from "./pages/Invoices/InvoiceDetails";
 import ProfilePage from "./pages/Profile/ProfilePage";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
+import { AuthProvider } from "./context/AuthContext";
+
 
 const login = () => {
   return (
-    <div>
+    <AuthProvider>
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
 
-          <Route path="/" element={<ProtectedRoute/>}>
+          <Route path="/" element={<ProtectedRoute />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="invoices" element={<Allinvoices />} />
             <Route path="invoices/new" element={<CreateInvoice />} />
@@ -45,7 +47,7 @@ const login = () => {
           },
         }}
       />
-    </div>
+    </AuthProvider>
   );
 };
 
